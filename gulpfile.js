@@ -12,7 +12,7 @@ function buildStyles() {
 }
 
 function watchTask() {
-  watch(['rhaenyra/**/*.scss'], buildStyles)
+  watch(['rhaenyra/**/*.scss', '*.html', 'showcase/*.html'], buildStyles)
 }
 
 exports.default = series(buildStyles, watchTask)
